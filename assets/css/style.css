@@ -1,0 +1,31 @@
+.gameIconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameIconContainer img {
+    margin: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.gameIconContainer img:hover {
+    transform: scale(1.2);
+}
+
+.results {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.resultIcon {
+    opacity: 0.4;
+}
+
+.resultIcon.winner {
+    opacity: 1;
+}
