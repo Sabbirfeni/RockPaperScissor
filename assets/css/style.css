@@ -1,13 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.app-container {
+    margin-top: 50px;
+}
+
 .gameIconContainer {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.game-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
 .gameIconContainer img {
     margin: 30px;
     transition: 0.3s;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .app-container {
+        margin-top: 30px;
+    }
+    .results h1 {
+        font-size: 20px;
+    }
+    .gameIconContainer img {
+        width: 70px;
+    }
+    .resultIcon img {
+        width: 70px;
+        margin: 15px 0px;
+    }
 }
 
 .gameIconContainer img:hover {
@@ -20,6 +54,11 @@
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
+    margin-top: 30px;
+}
+
+.results h1 {
+    font-size: 22px;
 }
 
 .resultIcon {
